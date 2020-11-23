@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 新 Bootstrap4 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <!-- bootstrap.bundle.min.js 用于弹窗、提示、下拉菜单，包含了 popper.min.js -->
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div style="background-color: bisque;">
+        <nav class="navbar navbar-expand-md  bg-dark navbar-dark fixed-top">
+                <form action="" class="form-inline">
+                    <a href="" class="navbar-brand">
+                        <img src="logo.jpg" style="width: 50px; border-radius:50%;" alt="">
+                    </a>
+                    <span class="navbar-text" >精灵宝可梦</span>
+                    <input type="text" class="form-control">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mymodal">搜索</button>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#colside3">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+    
+                    <div class="collapse navbar-collapse" id="colside3">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a href="" class="nav-link dropdown-toggle" id="navbardrop"
+                                    data-toggle="dropdown">地区</a>
+                                <div class="dropdown-menu">
+                                    <a href="" class="dropdown-item">关东</a>
+                                    <a href="" class="dropdown-item">成都</a>
+                                    <a href="" class="dropdown-item">芳缘</a>
+                                    <a href="" class="dropdown-item">新奥</a>
+                                    <a href="" class="dropdown-item">伊修</a>
+    
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown ">
+                                <a href="" class="nav-link dropdown-toggle " id="navbardrop" data-toggle="dropdown">属性</a>
+                                <div class="dropdown-menu">
+                                    <a href="#tab5" class="dropdown-item">火属性</a>
+                                    <a href="" class="dropdown-item">水属性</a>
+                                    <a href="" class="dropdown-item">电属性</a>
+                                    <a href="" class="dropdown-item">草属性</a>
+                                    <a href="" class="dropdown-item">龙属性</a>
+    
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="" class="nav-link dropdown-toggle" id="navbardrop"
+                                    data-toggle="dropdown">种类</a>
+                                <div class="dropdown-menu">
+                                    <a href="#1" class="dropdown-item">宝可梦</a>
+                                    <a href="#2" class="dropdown-item">传说宝可梦</a>
+                                    <a href="#3" class="dropdown-item">神话宝可梦</a>
+    
+                                </div>
+                            </li>
+                        </ul>
+    
+    
+                    </div>
+    
+                </form>
+            </nav>
+            <!-- modal-sm/modal-lg 可创建不同尺寸的模态框 -->
+        <div class="modal fade" id="mymodal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- 模态框头部 -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">搜索失败</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- 模态框主题 -->
+                    <div class="modal-body">
+                        网站暂时不支持此功能
+                    </div>
+
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">好吧</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+            <br>
+            <div class="container ">
+        
+                <!-- 使用 data-interval="1000" 来控制切换时间 -->
+                <div id="demo" class="carousel slide " data-interval="2000" data-ride="carousel" >
+                    <!-- 指示符 -->
+                    <ul class="carousel-indicators">
+                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo" data-slide-to="1"></li>
+                        <li data-target="#demo" data-slide-to="2"></li>
+                    </ul>
+        
+                    <!-- 轮播图片 -->
+                    <div class="carousel-inner ">
+        
+                        <div class="carousel-item active">
+                            <img class="carousel_img" style="width: 100%;height:50%;" src="1.jpg" alt="">
+                            <div class="carousel-caption">
+                                <h3></h3>
+                            </div>
+                        </div>
+        
+                        <div class="carousel-item">
+                            <img class="carousel_img" style="width: 100%;height:50%;" src="2.jpg" alt="">
+                            <div class="carousel-caption">
+                                <h3></h3>
+                            </div>
+                        </div>
+        
+                        <div class="carousel-item">
+                            <img class="carousel_img" style="width: 100%;height:50%;" src="3.jpg" alt="">
+                            <div class="carousel-caption">
+                                <h3></h3>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+        
+                    <a class="carousel-control-next" href="#demo" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+                
+                <div class="container-fluid" style="margin-top: 50px;">
+                    <h3 id="1">宝可梦</h3>
+                    <p>
+                        宝可梦（日文︰ポケモン/ポケットモンスター，英文︰Pokémon），是生活在宝可梦世界的既神秘又不可思议的生物，目前已知的宝可梦一共有898种。在天空中、大海里、高山上、森林中、草原上、城镇里，都可以见到宝可梦的身影。有些宝可梦和人类友好地居住在一起；有些野生宝可梦则栖息于草丛、洞窟或是大海里。关于它们的生态仍然存在着许多人类未能破解的谜团。
+                    </p>
+                    <p>
+                        宝可梦从蛋中出生，许多宝可梦可以进化成另一种宝可梦，从而变大或者变强。宝可梦可以学会各种招式，使用招式可以对战或进行各种任务。
+宝可梦依据其特征，分为18种属性。比如，皮卡丘是电属性宝可梦，而小福蛋是一般属性宝可梦。同时，也有拥有2种属性的宝可梦，比如路卡利欧是格斗属性与钢属性宝可梦。属性之间相互克制，很大程度上影响着对战。灵活运用属性相性中有利的属性会使训练家在对战中占有优势。
+与宝可梦有关的名词常常使用宝可（日文︰ポケ，英文︰Poké）或宝（日文︰ポ，英文︰Po）代指宝可梦，如宝可清爽乐、宝芬。
+                    </p>
+                    <h4 id="2">
+                        传说宝可梦
+                    </h4>
+                    <p>
+                        传说的宝可梦（日文︰伝说のポケモン，英文︰Legendary Pokémon）是指在宝可梦世界各地所流传的古老传说里提到的关键宝可梦，它们往往拥有非常强大的力量，并且存在十分稀少。在神话传说里，它们有的被奉为神明或神使、有的被认为是世间某物的创造者或管理者、有的甚至曾经在过去引起了巨大的灾害。还有部分传说的宝可梦是人类为了某些目的而制造的强大宝可梦，其中不乏以其他传说的宝可梦为范本所制成的宝可梦。
+                    </p>
+                    <h4 id="3">
+                        神话宝可梦
+                    </h4>
+                    <p>
+                        神话的宝可梦（日文︰神话のポケモン，英文︰mythical Pokémon）是传说的宝可梦帝牙卢卡、帕路奇亚和骑拉帝纳的统称。它们在神奥地区的神话里被描述为“神”。帝牙卢卡、帕路奇亚和骑拉帝纳分别掌管着构成世界的“时间”、“空间”和“反物质”。
+                    </p>
+                    <div id="parentid">
+
+                        <div class="card-header">
+                            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#collapse1">宝可梦在游戏中</button>
+                
+                        </div>
+                
+                        <div id="collapse1" class="collapse show" >
+                
+                            <div class="card-body">
+                                <p class="card-text">
+                                    宝可梦作为人类的朋友和伙伴，可以和人类一起完成多种活动，例如建造房屋、搬运家具、烹饪、攀岩、探险，甚至飞上天空，等等。可以在草丛、水中、洞窟、沙地、沼泽、海底和空中等各个地方找到野生的宝可梦。
+许多宝可梦世界的人类会和宝可梦一起旅行，参加宝可梦华丽大赛赢得缎带勋章或者收集徽章，并挑战宝可梦联盟，这样的人被称为宝可梦训练家，他们会让宝可梦与其它训练家或者野生宝可梦对战，通过利用不同属性的宝可梦之间的互相配合，并充分考虑特性、搭配招式和携带道具、培养能力，打造出一个强力的宝可梦队伍。
+玩家可以通过收服宝可梦、培育新的宝可梦、NPC赠送（宝可梦或宝可梦的蛋）、游戏内连接交换、活动赠送、与其他玩家连接交换来获得新的宝可梦。也可以通过大量出现、宝可追踪、图鉴领航、闯入对战、岛屿扫描、连续捕获和极巨团体战等方式获得在该地区不易获得的宝可梦，或者通过联动、宝可梦AR搜寻器、宝可梦梦境世界、宝可梦虚拟银行、Pokémon HOME等方式与全世界各种各样的宝可梦相遇。
+在不可思议迷宫系列中，宝可梦生活在一个不同于《宝可梦》系列的独立的世界，其中一般只有宝可梦生活。在那个世界中，宝可梦既有一般的镇民，也有加入救助队或探险队，在各种不可思议迷宫探险的探险家，还有在迷宫里生活的宝可梦，主角则会变成宝可梦来到这个世界。
+在远古时期发展，但还没有到现代的乱世时期，带着宝可梦们的训练家被称为武将，他们会和与自己链接的宝可梦进行合战。
+                                </p>
+                            </div>
+                
+                        </div>
+                    <div id="parentid">
+
+                        <div class="card-header">
+                                <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#collapse2">宝可梦在动画中</button>
+                    
+                        </div>
+                    
+                        <div id="collapse2" class="collapse show" >
+                    
+                            <div class="card-body">
+                                <p class="card-text">
+                                    在动画中，宝可梦具有了更多类似人类的特质，有些宝可梦甚至可以讲人类的语言，例如火箭队的喵喵。
+                                    动画中揭示了更多人类与宝可梦相处的历史，比如精灵球是在近代才出现的物品，而大木博士在少年时所使用的精灵球也与现代的样子不同。
+                                    在精灵球的发明和大规模生产之前，城都地区的人们还会使用球果来捕捉宝可梦。而在远古时期，宝可梦被称为魔兽，人类使用魔兽装具来控制这种生物。
+                                    </p>
+                                </div>
+                    
+                            </div>
+                    
+                </div>
+                <ul class="nav nav-pills" style="margin-top: 20px;">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#tab5">火属性</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" data-toggle="tab" href="#tab6" >水属性</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link " data-toggle="tab" href="#tab7" >电属性</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " data-toggle="tab" href="#tab8" >毒属性</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " data-toggle="tab" href="#tab9" >龙属性</a>
+                    </li>
+                </ul>
+        
+                <div class="tab-content">
+                    <div class="tab-pane container active" id="tab5">
+                        火属性（曾译︰炎属性，日文︰ほのおタイプ，英文︰Fire type）是宝可梦的属性之一。
+                        火伊布，火暴兽，炽焰咆哮虎，炎帝，烈焰猴，火焰鸟，火焰鸡，凤王，原始固拉多，喷火龙
+                    </div>
+        
+                    <div class="tab-pane container" id="tab6">
+                        水 属性（Water / みず）
+一般中国分为金木水火土，外国分为水火地风。
+水属性在大部分网游中都有，尤其是一些角色扮演类的游戏，以下以《神奇宝贝》为例：
+·《神奇宝贝》系列中的17种属性之一，涉及面广泛，几乎是训练员必备的一种属性。
+·属性相克（攻击方）
+1 倍效果： 电气 冰 超能力 邪恶 一般 格斗 飞行 虫 毒 钢 幽灵
+0.5 倍效果： 水 草 龙
+2 倍效果： 地面 岩石
+·属性相克（防御方）
+1 倍效果： 超能力 龙 邪恶 一般 格斗 飞行 虫 毒 地面 岩石 幽灵
+0.5 倍效果： 水 冰 钢
+2 倍效果： 电气 草
+                        美纳斯，暴鲤龙，拉普拉斯，刺龙王，甲贺忍蛙
+                    </div>
+        
+                    <div class="tab-pane container" id="tab7">
+                        电属性（日文︰でんきタイプ，英文︰Electric type）是宝可梦的属性之一。皮卡丘
+                    </div>
+                    <div class="tab-pane container" id="tab8">
+                        毒属性（日文︰どくタイプ，英文︰Poison type）是宝可梦的属性之一。毒龙
+                    </div>
+                    <div class="tab-pane container" id="tab9">
+                        龙属性（日文︰ドラゴンタイプ，英文︰Dragon type）是宝可梦的属性之一。快龙
+                    </div>
+                </div>
+                <br>
+                <br>
+
+            </div>
+            <div class="container-fluid" style="background-color:burlywood; text-align: center;">
+                <h3>
+                    本网站内容均来自网络，如有侵权，概不负责。
+                </h3>
+                </div>
+</body>
+</html>
