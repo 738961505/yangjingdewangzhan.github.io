@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="form.js"></script>
+
+</head>
+
+<body>
+
+    <form action="success.html" onsubmit="return check()" method="post">
+        <h3 style="text-align: center;">表单</h3>
+        <div class="main">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" value="" onblur="checkName()" >
+
+            <label for="phone">Phone</label>
+            <input type="text" name="phone" id="phone" onblur="checkPhone()" placeholder="请输入手机号码">
+
+            <label for="address">Address</label>
+            <select type="text" name="address">
+                <option value="cn">China</option>
+                <option value="jp">Japan</option>
+                <option value="sk">SouthKorea</option>
+            </select>
+
+            <label for="pwd">Password</label>
+            <input type="password" name="pwd" id="pwd" onblur="checkpwd()">
+
+            <label for="pwd">ConfirmPassword</label>
+            <input type="password" name="pwd2" id="pwd2" onblur="checkConfirmpwd()">
+
+            <!-- <button type="submit">修改</button> -->
+
+            <input type="submit" value="提交">
+        </div>
+
+    </form>
+</body>
+
+</html>
