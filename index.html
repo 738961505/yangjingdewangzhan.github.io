@@ -22,9 +22,9 @@
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/index.css">
     <script>
-        function loading() {
+        function load() {
             document.getElementsByClassName('avatar')[0].style.display = 'block';
-            document.getElementsByClassName('loading')[0].style.display = 'none';
+            document.getElementsByClassName('load')[0].style.display = 'none';
         }
     </script>
 </head>
@@ -47,7 +47,7 @@
                         <span></span>
                     </div>
                     <!-- 头像照片 -->
-                    <img class="avatar" src="assets/images/1.jpg">
+                    <img class="avatar" src="assets/images/1.jpg" onload="load()">
                 </section>
 
                 <h1 class="name">杨靖</h1>
